@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light;
+  --page: #eef2f5;
+  --surface: #fcfcfb;
+  --surface-sunk: #f3f6f8;
+  --ink: #12263a;
+  --ink-2: #4a5b6c;
+  --muted: #74828f;
+  --hairline: #dde3e9;
+  --baseline: #b9c3cc;
+  --chrome: #12304d;
+  --chrome-ink: #fcfcfb;
+
+  /* Chart colours (validated: CVD + contrast, light surface #fcfcfb) */
+  --series-forecast: #2a78d6;
+  --series-actual: #eb6834;
+  --series-neutral: #5b7590;
+  --series-recede: #c3cfdb;
+  --delivery-wash: rgb(42 120 214 / 0.06);
+
+  --status-good: #0b7f0b;
+  --status-critical: #c23333;
+
+  --radius-control: 6px;
+  --radius-panel: 10px;
+
+  /* Type scale: 1.25 ratio from a 16px base */
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5625rem;
+  --fs-2xl: 1.953rem;
+  --fs-3xl: 2.441rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d1319;
+    --surface: #151d25;
+    --surface-sunk: #111820;
+    --ink: #e6ecf1;
+    --ink-2: #a8b5c2;
+    --muted: #7f8c99;
+    --hairline: #26313c;
+    --baseline: #3a4653;
+    --chrome: #dbe6f1;
+    --chrome-ink: #0d1319;
+
+    /* Validated against dark surface #151d25 */
+    --series-forecast: #3987e5;
+    --series-actual: #d95926;
+    --series-neutral: #8aa1b8;
+    --series-recede: #33414f;
+    --delivery-wash: rgb(57 135 229 / 0.08);
+
+    --status-good: #2dbb2d;
+    --status-critical: #e66767;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--series-forecast);
+  outline-offset: 2px;
+}
+
+/* Digits of equal width, so times and MW values line up */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}

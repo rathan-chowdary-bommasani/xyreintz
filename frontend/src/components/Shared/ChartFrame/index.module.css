@@ -1,0 +1,62 @@
+.frame {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-panel);
+  padding: 20px 20px 16px;
+  min-width: 0;
+}
+
+.toggle {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--ink-2);
+  padding: 4px 10px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-control);
+  cursor: pointer;
+}
+
+.toggle:hover {
+  color: var(--ink);
+  border-color: var(--baseline);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  margin-top: 12px;
+  font-size: var(--fs-sm);
+  color: var(--ink-2);
+}
+
+.key {
+  display: inline-block;
+  flex: none;
+}
+
+.key[data-kind="line"] {
+  width: 16px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--key);
+}
+
+.key[data-kind="bar"] {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--key);
+}
+
+.plot {
+  margin-top: 12px;
+  /* Recharts measures its parent; min-width 0 stops grid blowouts. */
+  min-width: 0;
+}
+
+/* Recharts focus outline is noisy on click; keep it for keyboard only. */
+.plot :global(.recharts-wrapper:focus:not(:focus-visible)),
+.plot :global(.recharts-surface:focus:not(:focus-visible)) {
+  outline: none;
+}

@@ -1,0 +1,36 @@
+.group {
+  display: flex;
+  align-items: stretch;
+  height: 34px;
+  border: 1px solid var(--baseline);
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.select {
+  padding: 0 10px;
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  border-inline: 1px solid var(--hairline);
+  cursor: pointer;
+}
+
+.step {
+  width: 32px;
+  font-size: var(--fs-lg);
+  line-height: 1;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+.step:hover:not(:disabled) {
+  background: var(--surface-sunk);
+  color: var(--ink);
+}
+
+.step:disabled {
+  color: var(--baseline);
+  cursor: not-allowed;
+}

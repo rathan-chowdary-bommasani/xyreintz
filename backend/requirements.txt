@@ -1,0 +1,12 @@
+# Web framework
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+
+# HTTP
+httpx==0.28.1
+
+# Config
+pydantic-settings==2.16.1
+
+# Time zone data for zoneinfo (Windows and slim images ship none)
+tzdata==2026.5

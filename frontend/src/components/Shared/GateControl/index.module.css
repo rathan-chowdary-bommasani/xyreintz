@@ -1,0 +1,17 @@
+.input {
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--baseline);
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.reset {
+  font-size: var(--fs-sm);
+  color: var(--series-forecast);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
