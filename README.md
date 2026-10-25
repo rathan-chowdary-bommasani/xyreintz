@@ -1,4 +1,4 @@
-# WindDesk
+# WindDesk ([https://xyreintz.vercel.app/](https://xyreintz.vercel.app/))
 
 Day-ahead wind forecast monitoring for a GB utility's power procurement desk.
 
@@ -98,6 +98,14 @@ cd frontend
 npm install
 npm run dev        # http://localhost:5173, proxies /api to the backend on port 8000
 ```
+
+---
+
+## Deployment
+
+- Both frontend and backend deployed in vercel. Backend is deployed through vercel container (docker)
+
+#### App Link: [https://xyreintz.vercel.app/](https://xyreintz.vercel.app/)
 
 ---
 
